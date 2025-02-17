@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "Chetioui-Shop",
+    "slug": "chetioui-shop",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo/logo_white.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#ffffff",
+      "newArchEnabled": true
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mahfod.abdenasser",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIBackgroundModes": ["remote-notification"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo/logo_white.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.mahfod.abdenasser",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/logo/logo_white.png",
+          "color": "#ffffff",
+          "sounds": ["./assets/notification.wav"],
+          "mode": "production"
+
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8c2cea53-e4fb-43ac-a2ea-54385ceaf6c4"
+      },
+      "RESEND_API_KEY": "re_YLtH1efr_Pieg4sFZQhqhWQBGPdx3FjE2",
+      "EMAIL_FROM": "confiserie.chetioui@gmail.com"
+    },
+    "owner": "owl2003",
+    "notification": {
+      "icon": "./assets/logo/logo_white.png",
+      "color": "#ffffff",
+      "iosDisplayInForeground": true,
+      "androidMode": "default",
+      "androidCollapsedTitle": "New Notification"
+    }
+  }
+}
