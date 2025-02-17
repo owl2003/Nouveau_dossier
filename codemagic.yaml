@@ -7,4 +7,4 @@
       - npm install
       - npx expo prebuild
     artifacts:
-      - build/ios/*.ipa
+      - ios/*.ipa
